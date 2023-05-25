@@ -1,14 +1,120 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" , initial-scale = "1.0">
+  <title>Apoya a tu artista local</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+
+  <div class="contenedor">
+    <img src="logo2.jpg" alt="logo" width="630">
+
+    <br>
+    <br>
+    <div class="seleccion">
+      
+      
+    <h1>¿A que Artista desea apoyar?</h1>
+
+    <!--Cree una lista deplegable para elegir el artista-->
+    <select name="artistas" id="artistas">
+      <option value="" selected disabled>-Selecciona el Artista-</option>
+      <option value="lizeis">Lizeis</option>
+      <option value="jozz">Jozz Ojeda</option>
+      <option value="panelismo">Panelismo</option>
+    </select>
+  <br>
+  
+
+  </div>
+
+
+
+
+    <br>
+    <br>
+    
+    <h2>TARJETA DE CRÉDITO O DÉBITO:</h2>
+
+  
+    <!-- Formulario para ingreso de datos del usuario-->
+
+    <!--almacenar la información para poder usarla despues -->
+    <form id="form">
+      <label for="username">Nombre:</label>
+      <input type="text" id="username" name="username" placeholder="Ingrese su nombre completo" size="23" />
+
+
+      <br>
+      <br>
+
+      
+
+      <label for="cardnumber">Número de tarjeta</label>
+      <input type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="Ingrese 16 digitos"  size="14" pattern="\d*"
+        maxlength="16" />
+
+      <br>
+      <br>
+
+      <label for="birthdate">Fecha de vencimiento:</label>
+      <input type="text" id="birthdate" name="birthdate" maxlength="5" placeholder="Mes/Año" size="4" />
+
+      <br>
+      <br>
+
+
+      <label for="Cvv">CVV:</label>
+      <input type="text" id="Cvv" name="Cvv" placeholder="3 digitos" maxlength="3" size="3" inputmode="numeric" pattern="\d*" />
+
+      <br>
+      <br>
+
+
+      <label for="amount">Cantidad:</label>
+      <input type="text" id="amount" name="amount" placeholder="US$" size="2" />
+
+      <br>
+      <br>
+      <br>
+      <input class="btndonar" type="submit" value="Donar" />
+       
+     <!--Cree un parrafo con el id mensajev para mostrar el mensaje al usuario segun la validación-->        
+      <div id="mensajedeaviso">
+      <p id="mensajev"  class="mensaje"></p>
+      <br>
+      <br>
+      <br>
+      
+      </div>
+      
+
+
+
+
+
+    </form>
+  
+
+
+
+
+
+
+
+
+
+  <footer class="pie">Miriam Avalos / Laboratoria </footer>
+</div>
+  
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
