@@ -19,7 +19,7 @@ const validator = {
       let suma = 0;
       for (let i = 0; i < tarjetaArray.length; i += 1) {
 
-        //multiplicar numeros pares *2 
+        //multiplica los numeros que estan en las posiciones impares 
         if (i % 2 !== 0) {
 
           tarjetaArray[i] = tarjetaArray[i] * 2
